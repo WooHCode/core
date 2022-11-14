@@ -42,6 +42,7 @@ public class ApplicationContextBasicFindTest {
      //   ac.getBean("xxxxx", MemberService.class);
 
      //   MemberService xxxxx = ac.getBean("xxxxx", MemberService.class);
+        //Exception을 ()안에 항목으로 검출이 된다면 통과
         assertThrows(NoSuchBeanDefinitionException.class, ()->ac.getBean("xxxxx", MemberService.class));
     }
 
